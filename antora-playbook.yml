@@ -1,0 +1,16 @@
+antora:
+  extensions:
+    - ./lib/my-extension.js
+site:
+  title: InferenceQL
+  start_page: language::language.adoc
+content:
+  sources:
+  - url: /Users/zane/projects/inferenceql.query/
+    branches: HEAD
+    start_path: docs
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files: ./supplemental-ui
