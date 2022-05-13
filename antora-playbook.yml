@@ -6,8 +6,8 @@ site:
   start_page: language::language.adoc
 content:
   sources:
-  - url: /Users/zane/projects/inferenceql.query/
-    branches: HEAD
+  - url: https://github.com/OpenIQL/inferenceql.query
+    branches: zane/antora
     start_path: docs
 ui:
   bundle:
