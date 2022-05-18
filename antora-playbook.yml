@@ -3,11 +3,17 @@ antora:
     - ./lib/my-extension.js
 site:
   title: InferenceQL
-  start_page: language::language.adoc
+  start_page: start-page::start-page.adoc
 content:
   sources:
+  - url: https://github.com/OpenIQL/openiql.github.io
+    branches: ulli/document-automodeling
+    start_path: landing-page
   - url: https://github.com/OpenIQL/inferenceql.query
-    branches: zane/antora
+    branches: ulli/antora
+    start_path: docs
+  - url: /home/ulli/git_repos/inferenceql.auto-modeling/
+    branches: ulli/docs
     start_path: docs
 ui:
   bundle:

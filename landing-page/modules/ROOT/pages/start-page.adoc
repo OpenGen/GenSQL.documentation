@@ -1,0 +1,34 @@
+= InferenceQL
+Ulli Schaechtle <u.schaechtle@gmail.com>
+
+== Disclaimer
+
+**InferenceQL is pre-alpha / unreleased software.** There are known and unknown isues and bugs. Crashes are expected.  This software should not be expected to treat your data securely.
+
+== Content
+
+Welcome to our first attempt to document the InferenceQL platform. The
+documenation covers:
+
+* xref:ROOT:quick-start.adoc[Quickstart]
+
+* xref:auto-modeling::auto-modeling.adoc[Automated data modeling]
+
+* xref:language::language.adoc[Query language]
+
+== Open-source code
+
+Please find our open source code https://github.com/OpenIQL[here].
+
+== Citation
+
+Please cite this work via: TBD.
+
+== License
+
+All of InferenceQL is open source and licensed under Apache 2.0. At times, the
+InferenceQL teams maintains private repos hosting components of InferenceQL to
+prepare an OSS release. If you happen to have privileged private access -
+please don't share it pre-release.
+
+
