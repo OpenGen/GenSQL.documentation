@@ -18,6 +18,8 @@ documenation covers:
 
 * xref:language::language.adoc[Query language]
 
+We recommend all users begin with the xref:auto-modeling:quick-start.adoc[InferenceQL Quickstart].
+
 == Open-source code
 
 Please find our open source code https://github.com/OpenIQL[here].
