@@ -1,5 +1,7 @@
-= InferenceQL
+= Platform Documentation
 Ulli Schaechtle <u.schaechtle@gmail.com>
+
+This site hosts technical documentation for the InferenceQL platform.
 
 == Disclaimer
 
@@ -10,7 +12,7 @@ Ulli Schaechtle <u.schaechtle@gmail.com>
 Welcome to our first attempt to document the InferenceQL platform. The
 documenation covers:
 
-* xref:ROOT:quick-start.adoc[Quickstart]
+* xref:auto-modeling:quick-start.adoc[Quickstart]
 
 * xref:auto-modeling::auto-modeling.adoc[Automated data modeling]
 
