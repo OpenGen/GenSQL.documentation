@@ -1,0 +1,64 @@
+name: deploy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+env:
+  FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-java@v2
+        with:
+          distribution: adopt
+          java-version: 11
+
+      - uses: DeLaGuardo/setup-clojure@master
+        with:
+          bb: 0.8.157
+          tools-deps: 1.10.3.1040
+
+      - uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7.4.1
+          run_install: false
+
+      - uses: superfly/flyctl-actions/setup-flyctl@master
+
+      - uses: actions/checkout@v2
+
+      - uses: actions/cache@v2
+        with:
+          path: ~/.m2
+          key: m2-${{ hashFiles('deps.edn') }}
+
+      - uses: actions/cache@v2
+        with:
+          path: ~/.gitlibs
+          key: gitlibs-${{ hashFiles('deps.edn') }}
+
+      - id: pnpm-cache
+        run: |
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+
+      - uses: actions/cache@v3
+        with:
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - run: bb js:deps
+
+      - run: bb clj:deps
+
+      - run: bb site:build
+
+      - run: bb docker:build
+
+      - run: bb fly:deploy
