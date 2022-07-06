@@ -16,4 +16,4 @@ See `.github/workflows/deploy.yaml` for the versions of each.
 
 1. Clone or fork the repository.
 1. Install the prerequisites.
-1. Run `bb:tasks` to see a list of available tasks.
+1. Run `bb tasks` to see a list of available tasks.
