@@ -1,0 +1,15 @@
+{:paths ["src" "build"]
+ :deps {buddy/buddy-auth {:mvn/version "3.0.1"}
+        com.stuartsierra/component {:mvn/version "1.1.0"}
+        crypto-password/crypto-password {:mvn/version "0.3.0"}
+        http-kit/http-kit {:mvn/version "2.3.0"}
+        ring-jetty-component/ring-jetty-component {:mvn/version "0.3.1"}
+        inferenceql/inferenceql.query {:git/url "https://github.com/InferenceQL/inferenceql.query.git"
+                                       :git/sha "00390d198f4b21e8812688eedaa304ffe69eae16"}
+        ring/ring-core {:mvn/version "1.9.5"}}
+ :aliases {:jibbit {:deps {io.github.atomisthq/jibbit
+                           {:git/tag "v0.1.14"
+                            :git/sha "ca4f7d3"}}}
+           :dev {:extra-paths ["dev"]
+                 :extra-deps {org.clojure/tools.namespace
+                              {:mvn/version "1.3.0"}}}}}
