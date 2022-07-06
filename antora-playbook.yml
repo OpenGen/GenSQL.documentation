@@ -7,7 +7,6 @@ site:
 content:
   sources:
     - url: https://github.com/InferenceQL/inferenceql.query
-      branches: zane/antora
       start_path: docs
 ui:
   bundle:
