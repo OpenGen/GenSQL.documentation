@@ -10,7 +10,7 @@
 
          fly:deploy {:depends [docker:build]
                      :doc "Deply site to fly.io"
-                     :task (do (shell (str "fly deploy --image " image-name))
+                     :task (do (shell (str "flyctl deploy --image " image-name))
                                (println (str "Site deployed. To view it, navigate to https://" image-name ".fly.dev/")))}
 
          site:build {:doc "Build site"
