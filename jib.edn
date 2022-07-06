@@ -1,0 +1,3 @@
+{:main inferenceql.documentation
+ :target-image {:image-name "inferenceql.documentation"
+                :type :docker}}

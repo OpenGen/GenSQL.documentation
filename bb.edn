@@ -1,0 +1,30 @@
+{:tasks {:init (def image-name "inferenceql.documentation")
+
+         docker:build {:depends [site:build]
+                       :doc "Build Docker image"
+                       :task (shell "clojure -T:jibbit jibbit.core/build")}
+
+         docker:run {:doc "Run site in Docker container"
+                     :task (do (println "Navigate to: http://localhost:8080")
+                               (shell (str "docker run -p 8080:8080 " image-name)))}
+
+         fly:deploy {:depends [docker:build]
+                     :doc "Deply site to fly.io"
+                     :task (do (shell (str "fly deploy --image " image-name))
+                               (println (str "Site deployed. To view it, navigate to https://" image-name ".fly.dev/")))}
+
+         site:build {:doc "Build site"
+                     :task (shell "pnpm antora --fetch antora-playbook.yml")}
+
+         site:open {:doc "Open site index.html"
+                    :task (shell "open build/site/index.html")}
+
+         run:host {:doc "Run site on host"
+                   :task (do (println "Navigate to: http://localhost:8080")
+                             (shell "clojure -M -m inferenceql.documentation"))}
+
+         js:deps {:doc "Fetch JavaScript dependencies"
+                  :task (shell "pnpm install")}
+
+         clj:deps {:doc "Fetch Clojure dependencies"
+                   :task (shell "clojure -A:jibbit -P")}}}
