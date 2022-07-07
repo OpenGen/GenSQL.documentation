@@ -16,6 +16,9 @@
          site:build {:doc "Build site"
                      :task (shell "pnpm antora --fetch antora-playbook.yml")}
 
+         site:clean {:doc "Remove generated site artifacts"
+                     :task (shell "rm -Rf build")}
+
          site:open {:doc "Open site index.html"
                     :task (shell "open build/site/index.html")}
 
