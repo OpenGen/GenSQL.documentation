@@ -9,7 +9,7 @@
                                (shell (str "docker run -p 8080:8080 " image-name)))}
 
          fly:deploy {:depends [docker:build]
-                     :doc "Deply site to fly.io"
+                     :doc "Deploy site to fly.io"
                      :task (do (shell (str "flyctl deploy --image " image-name))
                                (println (str "Site deployed. To view it, navigate to https://" image-name ".fly.dev/")))}
 
