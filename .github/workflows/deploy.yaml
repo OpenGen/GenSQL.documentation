@@ -32,6 +32,12 @@ jobs:
 
       - uses: actions/checkout@v2
 
+      - uses: webfactory/ssh-agent@v0.4.1
+        with:
+          ssh-private-key: ${{ secrets.AUTO_MODELING_DEPLOY_KEY }}
+
+      - run: git config --global credential.helper store  &&  git ls-remote -h https://github.com/InferenceQL/inferenceql.auto-modeling > /dev/null
+
       - uses: actions/cache@v2
         with:
           path: ~/.m2
