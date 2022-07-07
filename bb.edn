@@ -4,7 +4,7 @@
                        :doc "Build Docker image"
                        :task (shell "clojure -T:jibbit jibbit.core/build")}
 
-         docker:run {:doc "Run site in Docker container"
+         docker:run {:doc "Run web server in Docker container"
                      :task (do (println "Navigate to: http://localhost:8080")
                                (shell (str "docker run -p 8080:8080 " image-name)))}
 
@@ -22,9 +22,9 @@
          site:open {:doc "Open site index.html"
                     :task (shell "open build/site/index.html")}
 
-         run:host {:doc "Run site on host"
-                   :task (do (println "Navigate to: http://localhost:8080")
-                             (shell "clojure -M -m inferenceql.documentation"))}
+         server:run {:doc "Run web server"
+                     :task (do (println "Navigate to: http://localhost:8080")
+                               (shell "clojure -M -m inferenceql.documentation"))}
 
          js:deps {:doc "Fetch JavaScript dependencies"
                   :task (shell "pnpm install")}
