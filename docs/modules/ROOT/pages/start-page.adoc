@@ -28,7 +28,9 @@ Please find our open source code https://github.com/OpenIQL[here].
 
 == Citation
 
-Please cite this work via: TBD.
+Please cite this work as: Ulrich Schaechtle, Cameron Freer, Zane Shelby, Feras Saad, and Vikash Mansinghka. "Bayesian
+AutoML for Databases via the InferenceQL Probabilistic Programming System."
+AutoML Conference 2022 - Workshop Track. Find the PDF https://2022.automl.cc/wp-content/uploads/2022/07/bayesian_automl_for_databases_.pdf[here].
 
 == License
 
