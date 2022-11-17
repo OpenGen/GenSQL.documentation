@@ -10,7 +10,7 @@ This site hosts technical documentation for the InferenceQL platform.
 == Content
 
 Welcome to our first attempt to document the InferenceQL platform. The
-documenation covers:
+documentation covers:
 
 * xref:auto-modeling::quick-start.adoc[Quickstart]
 
