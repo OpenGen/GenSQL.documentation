@@ -12,15 +12,15 @@ This site hosts technical documentation for the InferenceQL platform.
 Welcome to our first attempt to document the InferenceQL platform. The
 documentation covers:
 
-* xref:auto-modeling::quick-start.adoc[Quickstart]
+* xref:structure-learning::quick-start.adoc[Quickstart]
 
-* xref:auto-modeling::auto-modeling.adoc[Automated data modeling]
+* xref:structure-learning::structure-learning.adoc[Structure learning]
 
 * Inference Query language
 ** xref:query::iql-permissive.adoc[Query language (IQL-permissive)]
 ** xref:query::iql-permissive.adoc[Research Query Language -- aimed at PL researchers (IQL-permissive)]
 
-We recommend all users begin with the xref:auto-modeling::quick-start.adoc[Quickstart] tutorial.
+We recommend all users begin with the xref:structure-learning::quick-start.adoc[Quickstart] tutorial.
 
 == Open-source code
 

@@ -10,7 +10,7 @@ content:
       start_path: docs
     - url: https://github.com/InferenceQL/inferenceql.query
       start_path: docs
-    - url: git@github.com:InferenceQL/inferenceql.auto-modeling.git
+    - url: git@github.com:InferenceQL/inferenceql.structure-learning.git
       start_path: docs
 ui:
   bundle:
