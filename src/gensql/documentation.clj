@@ -1,6 +1,6 @@
-(ns inferenceql.documentation
+(ns gensql.documentation
   (:require [com.stuartsierra.component :as component]
-            [inferenceql.documentation.components :as components])
+            [gensql.documentation.components :as components])
   (:gen-class))
 
 (defn -main

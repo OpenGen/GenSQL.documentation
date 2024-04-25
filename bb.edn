@@ -1,4 +1,4 @@
-{:tasks {:init (def image-name "inferenceql.documentation")
+{:tasks {:init (def image-name "gensql.documentation")
 
          docker:build {:depends [site:build]
                        :doc "Build Docker image"
@@ -24,7 +24,7 @@
 
          server:run {:doc "Run web server"
                      :task (do (println "Navigate to: http://localhost:8080")
-                               (shell "clojure -M -m inferenceql.documentation"))}
+                               (shell "clojure -M -m gensql.documentation"))}
 
          js:deps {:doc "Fetch JavaScript dependencies"
                   :task (shell "pnpm install")}

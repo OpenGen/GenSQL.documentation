@@ -1,15 +1,15 @@
 = Platform Documentation
 Ulli Schaechtle <u.schaechtle@gmail.com>
 
-This site hosts technical documentation for the InferenceQL platform.
+This site hosts technical documentation for the GenSQL platform.
 
 == Disclaimer
 
-**InferenceQL is pre-alpha / unreleased software.** There are known and unknown isues and bugs. Crashes are expected.  This software should not be expected to treat your data securely.
+**GenSQL is pre-alpha / unreleased software.** There are known and unknown issues and bugs. Crashes are expected.  This software should not be expected to treat your data securely.
 
 == Content
 
-Welcome to our first attempt to document the InferenceQL platform. The
+Welcome to our first attempt to document the GenSQL platform. The
 documentation covers:
 
 * xref:structure-learning::quick-start.adoc[Quickstart]
@@ -17,25 +17,25 @@ documentation covers:
 * xref:structure-learning::structure-learning.adoc[Structure learning]
 
 * Inference Query language
-** xref:query::iql-permissive.adoc[Query language (IQL-permissive)]
-** xref:query::iql-permissive.adoc[Research Query Language -- aimed at PL researchers (IQL-permissive)]
+** xref:query::gensql-permissive.adoc[Query language (GenSQL-permissive)]
+** xref:query::gensql-permissive.adoc[Research Query Language -- aimed at PL researchers (GenSQL-permissive)]
 
 We recommend all users begin with the xref:structure-learning::quick-start.adoc[Quickstart] tutorial.
 
 == Open-source code
 
-Please find our open source code https://github.com/OpenIQL[here].
+Please find our open source code https://github.com/OpenGen[here].
 
 == Citation
 
 Please cite this work as: Ulrich Schaechtle, Cameron Freer, Zane Shelby, Feras Saad, and Vikash Mansinghka. "Bayesian
-AutoML for Databases via the InferenceQL Probabilistic Programming System."
+AutoML for Databases via the GenSQL Probabilistic Programming System."
 AutoML Conference 2022 - Workshop Track. Find the PDF https://2022.automl.cc/wp-content/uploads/2022/07/bayesian_automl_for_databases_.pdf[here].
 
 == License
 
-All of InferenceQL is open source and licensed under Apache 2.0. At times, the
-InferenceQL teams maintains private repos hosting components of InferenceQL to
+All of GenSQL is open source and licensed under Apache 2.0. At times, the
+GenSQL teams maintains private repos hosting components of GenSQL to
 prepare an OSS release. If you happen to have privileged private access -
 please don't share it pre-release.
 
