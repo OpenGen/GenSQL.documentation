@@ -1,4 +1,4 @@
-(ns inferenceql.documentation.components
+(ns gensql.documentation.components
   (:require [buddy.auth :as auth]
             [buddy.auth.backends :as backends]
             [buddy.auth.middleware :as middleware]

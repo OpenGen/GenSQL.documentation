@@ -1,7 +1,7 @@
-# InferenceQL documentation
+# GenSQL documentation
 
-The InferenceQL documentation website.
+The GenSQL documentation website.
 
 ## Contributing
 
-See [`CONTRIBUTING.md`](https://github.com/InferenceQL/documentation/blob/main/CONTRIBUTING.md).
+See [`CONTRIBUTING.md`](https://github.com/OpenGen/GenSQL.documentation/blob/main/CONTRIBUTING.md).

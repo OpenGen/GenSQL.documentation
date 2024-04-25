@@ -1,5 +1,5 @@
 * xref:structure-learning::quick-start.adoc[Quickstart]
 * xref:structure-learning::structure-learning.adoc[Structure learning]
 * Languages
-** xref:query::iql-permissive.adoc[IQL-permissive]
-** xref:query::iql-strict.adoc[IQL-strict]
+** xref:query::gensql-permissive.adoc[GenSQL-permissive]
+** xref:query::gensql-strict.adoc[GenSQL-strict]

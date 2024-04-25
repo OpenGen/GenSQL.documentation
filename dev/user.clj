@@ -1,7 +1,7 @@
 (ns user
   (:require [clojure.tools.namespace.repl :as repl]
             [com.stuartsierra.component :as component]
-            [inferenceql.documentation.components :as components]))
+            [gensql.documentation.components :as components]))
 
 (def system nil)
 

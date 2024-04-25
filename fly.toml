@@ -1,12 +1,12 @@
-# fly.toml file generated for inferenceql-documentation on 2022-07-06T12:30:52-04:00
+# fly.toml file generated for gensql-documentation on 2022-07-06T12:30:52-04:00
 
-app = "inferenceql-documentation"
+app = "gensql-documentation"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
 
 [build]
-  image = "inferenceql-documentation"
+  image = "gensql-documentation"
 
 [env]
   PORT = "8080"

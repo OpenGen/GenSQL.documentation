@@ -2,15 +2,15 @@ antora:
   extensions:
     - ./lib/my-extension.js
 site:
-  title: InferenceQL
+  title: GenSQL
   start_page: start-page::start-page.adoc
 content:
   sources:
     - url: ./
       start_path: docs
-    - url: https://github.com/InferenceQL/inferenceql.query
+    - url: https://github.com/OpenGen/GenSQL.query
       start_path: docs
-    - url: git@github.com:InferenceQL/inferenceql.structure-learning.git
+    - url: git@github.com:OpenGen/GenSQL.structure-learning.git
       start_path: docs
 ui:
   bundle:
