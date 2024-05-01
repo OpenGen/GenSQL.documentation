@@ -10,7 +10,7 @@ content:
       start_path: docs
     - url: https://github.com/OpenGen/GenSQL.query
       start_path: docs
-    - url: git@github.com:OpenGen/GenSQL.structure-learning.git
+    - url: https://github.com/OpenGen/GenSQL.structure-learning
       start_path: docs
 ui:
   bundle:
