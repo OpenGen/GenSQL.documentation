@@ -13,24 +13,28 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-java@v3
-        with:
-          distribution: adopt
-          java-version: 11
+      - uses: actions/checkout@v4
 
-      - uses: DeLaGuardo/setup-clojure@master
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: 21
+
+      - uses: DeLaGuardo/setup-clojure@12.5
         with:
           bb: 0.8.157
-          tools-deps: 1.10.3.1040
+          cli: 1.10.3.1040
 
-      - uses: pnpm/action-setup@v2.2.2
+      - uses: pnpm/action-setup@v3
         with:
-          version: 7.4.1
-          run_install: false
+          version: 8
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'pnpm'
 
       - uses: superfly/flyctl-actions/setup-flyctl@master
-
-      - uses: actions/checkout@v2
 
       - uses: actions/cache@v2
         with:
